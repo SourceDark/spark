@@ -1,0 +1,19 @@
+1. 减少出题过程中的重复劳动
+2. 提高题目的正确率
+3. 版本控制
+
+Class ： 
+
+	- Problem ： 题目
+		- String description ： 问题描述
+		- String inputFormat ： 输入格式
+		- String outputFormat ： 输出格式
+		- List<Testcase> avaliableTestcases : 可用的测试
+		- List<Testcase> enableTestcases : 启用的测试
+	
+	- Testcase ： 测试
+		- String purpose ： 测试目的
+		- Enum type ： 类型 {普通型测试/生成型测试}
+		- Long timeLimit : 时间限制(ms)
+		- Long memoryLimit : 空间限制(mb)
+		- String content : 根据type可以被理解为不同的意思：在普通型测试下，表示测试的输入；在生成性测试下，表示生成输入的脚本
